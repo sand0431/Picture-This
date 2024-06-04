@@ -15,8 +15,34 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+   <section> 
+<picture>
+  <!--for landscape images for large sizes -->
+  <source media="(min-width:960px)" 
+  srcset="images/image-landscape-1920.png,
+  images/image-landscape-1440.png,
+  images/image-landscape-960.png" />
+  
 
+  <!-- square images for medium sizes -->
+  <source
+   srcset="images/image-square-1440.png,
+  images/image-square-1080.png,
+  images/image-square-960.png,
+  images/image-square-800.png,
+  images/image-square-720.png,
+  images/image-square-640.png" />
+
+  <!-- square images for small sizes -->
+  <source srcset="images/image-square-720.png,
+  images/image-square-640.png,
+   images/image-square-540.png"
+   media="(min-width: 320px)" />
+
+   <img class="museum"
+   src="images/image-square-320.png" alt="museum images">
+</picture>
+</section>
   </header>
 </body>
 
